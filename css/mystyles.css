@@ -1,0 +1,122 @@
+/*basic element designs*/
+* {
+  box-sizing: border-box;
+}
+a{
+  align-items: stretch;
+}
+body {
+  margin: 0;
+  padding-top: 300px;
+}
+header {
+  height: 300px;
+  padding-top: 50px;
+  background: #f07057;
+  align-items: center;
+  background: lightblue;
+}
+/*positioning, aligning, etc.*/
+.main-nav,
+.main,
+.two,
+.three,
+.four {
+  position: relative;
+  vertical-align: middle;
+}
+.main-nav {
+  background: #fff;
+  height: 80px;
+  z-index: 150;
+  margin-bottom: -80px;
+  box-shadow: 0 2px 3px rgba(0,0,0,.4);
+
+}
+/*aligning nav items*/
+.five{
+  left: 50%;
+position: absolute;
+top: 50%;
+transform: translate(-50%, -50%);
+}
+
+header,
+.main-nav-scrolled {
+  position: fixed;
+  width: 100%;
+  top: 0;
+
+}
+
+.main {
+  padding: 110px 300px 300px;
+}
+.main,
+.two,
+.three,
+.four {
+  background: #f2f2e8;
+    padding: 110px 300px 300px;
+
+}
+/*Hardest part? figuring out how to position the video!*/
+.vid{
+      left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.two {
+  background: pink;
+}
+
+.three{
+  background: purple;
+  color:white;
+}
+
+.four {
+  background: lightgreen;
+  color: white;
+}
+
+/* Media queries did some different things to experiment*/
+@media screen and (max-width: 1200px) {
+header,
+.main {
+  background: violet;
+  color: white;
+  padding: 80px 10px 250px 10px;
+}
+
+.two {
+  background: magenta;
+  color: white;
+  padding: 80px 10px 250px 10px;
+}
+
+.three{
+  background: #42f4eb;
+  color:white;
+padding: 80px 10px 250px 10px;
+
+}
+
+.four {
+  background: #dcf441;
+  color: white;
+  padding: 80px 10px 250px 10px;
+
+}}
+@media screen and (min-width: 600px) {
+
+header{
+  background: purple;
+}
+body{
+  color: purple;
+
+}}
